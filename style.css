@@ -1,0 +1,161 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif; 
+    color: #fff;
+}
+
+
+.back1{ /*deep space*/
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.back2{ /*can you feel the love tonight */
+    background: #4568DC;  
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+    
+}
+.back3{ /*honey drew */
+    background: #43C6AC;
+    background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);
+    background: linear-gradient(to right, #F8FFAE, #43C6AC);
+    
+}
+.back4{ /*ibiza sunset*/
+    background: #ee0979; 
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+}
+
+
+
+.header{
+    text-align: center;
+}
+
+
+.row{
+    display:flex;
+    /*background-color: #000;*/
+    justify-content: center;
+}
+#archivo{
+    /*background-color: aqua;*/
+    padding: 60px 20px;
+    border: 4px dashed;
+    min-width: 30vw;
+    margin-right:10px;
+    text-align: center;
+    font-size: 14px;
+}
+#background{
+    /*background-color: burlywood;*/
+    max-width: 300px;
+    margin-left:10px;
+    margin-right:10px;
+}
+.textura{
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    user-select: none;
+}
+.textura div{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 6px;
+    user-select: all;
+}
+.textura div:hover{
+    opacity: 0.6;
+    transition: 1s;
+}
+.textura1{
+    background: url("img/Deep\ Space.jpg");
+}
+.textura2{
+    background: url("img/Can\ You\ Feel\ The\ Love\ Tonight.jpg");
+}
+.textura3{
+    background: url("img/Honey\ Dew.jpg");
+}
+.textura4{
+    background: url("img/Ibiza\ Sunset.jpg");
+}
+
+
+
+#fontColor{
+    /*background-color: burlywood;*/
+    max-width: 300px;
+    margin-left:10px;
+}
+.color{
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    user-select: none;
+}
+.color div{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 6px;
+    user-select: all;
+}
+.color div:hover{
+    opacity: 0.6;
+    transition: 1s;
+}
+.color1{
+    background: #fff;
+}
+.color2{
+    background: #000;
+}
+.color3{
+    background: #313131;
+}
+
+
+
+
+.footer{
+    text-align: center;
+    margin: 100px 0px 0px 0px;
+    padding:20px;
+    font-size: 12px;
+}
+
+.resultado{
+    min-height: 150px;;
+    display: grid;
+    margin: 30px 100px 30px 100px;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+}
+
+
+img{
+  width: 100%;
+  height: 100%;  
+  object-fit: cover;
+}
+img:first-child{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+img:nth-child(6){
+    grid-column: 2/4/3;
+    grid-row: 3/5;
+}
+
+img:nth-child(9){
+    grid-row: span 3;
+}
